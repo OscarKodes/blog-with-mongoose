@@ -1,0 +1,12 @@
+<%- include("partials/header") -%>
+
+<h1><%= post.title %></h1>
+
+<p><%= post.text %></p>
+
+<%- include("partials/footer") -%>
+
+<script type="text/javascript">
+  let postTitle = document.querySelector("h1").textContent;
+  document.title = postTitle;
+</script>
